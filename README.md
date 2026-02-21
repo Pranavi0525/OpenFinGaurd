@@ -170,8 +170,7 @@ docker compose up --build
 |---------|-----|
 | Streamlit Dashboard | http://localhost:8501 |
 | FastAPI Docs | http://localhost:8000/docs |
-| MLflow Tracking | http://localhost:5000 |
-| PostgreSQL | localhost:5432 |
+
 
 ---
 
