@@ -1,0 +1,367 @@
+{
+  "age_group": {
+    "attribute": "Age Group",
+    "reference_group": "60+",
+    "n_groups": 5,
+    "violations_found": false,
+    "violation_count": 0,
+    "violating_groups": [],
+    "overall_summary": {
+      "min_approval_rate": 0.8488,
+      "max_approval_rate": 0.9747,
+      "approval_rate_range": 0.1259,
+      "min_tpr": 0.3165,
+      "max_tpr": 0.5326,
+      "min_auc": 0.8117,
+      "max_auc": 0.8612
+    },
+    "group_metrics": [
+      {
+        "group": "18-30",
+        "n_samples": 1548,
+        "n_defaults": 166,
+        "default_rate": 0.1072,
+        "approval_rate": 0.8488,
+        "tpr_recall": 0.512,
+        "tnr_specificity": 0.8922,
+        "fpr": 0.1078,
+        "fnr": 0.488,
+        "precision": 0.3632,
+        "f1": 0.425,
+        "auc_roc": 0.8117
+      },
+      {
+        "group": "31-40",
+        "n_samples": 3617,
+        "n_defaults": 363,
+        "default_rate": 0.1004,
+        "approval_rate": 0.875,
+        "tpr_recall": 0.5152,
+        "tnr_specificity": 0.9186,
+        "fpr": 0.0814,
+        "fnr": 0.4848,
+        "precision": 0.4137,
+        "f1": 0.4589,
+        "auc_roc": 0.833
+      },
+      {
+        "group": "41-50",
+        "n_samples": 5214,
+        "n_defaults": 445,
+        "default_rate": 0.0853,
+        "approval_rate": 0.9016,
+        "tpr_recall": 0.5326,
+        "tnr_specificity": 0.9421,
+        "fpr": 0.0579,
+        "fnr": 0.4674,
+        "precision": 0.462,
+        "f1": 0.4948,
+        "auc_roc": 0.8612
+      },
+      {
+        "group": "51-60",
+        "n_samples": 5176,
+        "n_defaults": 305,
+        "default_rate": 0.0589,
+        "approval_rate": 0.9287,
+        "tpr_recall": 0.4951,
+        "tnr_specificity": 0.9552,
+        "fpr": 0.0448,
+        "fnr": 0.5049,
+        "precision": 0.4092,
+        "f1": 0.4481,
+        "auc_roc": 0.8554
+      },
+      {
+        "group": "60+",
+        "n_samples": 6794,
+        "n_defaults": 218,
+        "default_rate": 0.0321,
+        "approval_rate": 0.9747,
+        "tpr_recall": 0.3165,
+        "tnr_specificity": 0.9843,
+        "fpr": 0.0157,
+        "fnr": 0.6835,
+        "precision": 0.4012,
+        "f1": 0.3538,
+        "auc_roc": 0.8556
+      }
+    ],
+    "fairness_ratios": [
+      {
+        "group": "18-30",
+        "reference_group": "60+",
+        "demographic_parity_ratio": 0.8708,
+        "equal_opportunity_ratio": 1.6177,
+        "predictive_parity_ratio": 0.9053,
+        "auc_ratio": 0.9487,
+        "demographic_parity_violation": false,
+        "equal_opportunity_violation": false,
+        "predictive_parity_violation": false
+      },
+      {
+        "group": "31-40",
+        "reference_group": "60+",
+        "demographic_parity_ratio": 0.8977,
+        "equal_opportunity_ratio": 1.6278,
+        "predictive_parity_ratio": 1.0312,
+        "auc_ratio": 0.9736,
+        "demographic_parity_violation": false,
+        "equal_opportunity_violation": false,
+        "predictive_parity_violation": false
+      },
+      {
+        "group": "41-50",
+        "reference_group": "60+",
+        "demographic_parity_ratio": 0.925,
+        "equal_opportunity_ratio": 1.6828,
+        "predictive_parity_ratio": 1.1515,
+        "auc_ratio": 1.0065,
+        "demographic_parity_violation": false,
+        "equal_opportunity_violation": false,
+        "predictive_parity_violation": false
+      },
+      {
+        "group": "51-60",
+        "reference_group": "60+",
+        "demographic_parity_ratio": 0.9528,
+        "equal_opportunity_ratio": 1.5643,
+        "predictive_parity_ratio": 1.0199,
+        "auc_ratio": 0.9998,
+        "demographic_parity_violation": false,
+        "equal_opportunity_violation": false,
+        "predictive_parity_violation": false
+      },
+      {
+        "group": "60+",
+        "reference_group": "60+",
+        "demographic_parity_ratio": 1.0,
+        "equal_opportunity_ratio": 1.0,
+        "predictive_parity_ratio": 1.0,
+        "auc_ratio": 1.0,
+        "demographic_parity_violation": false,
+        "equal_opportunity_violation": false,
+        "predictive_parity_violation": false
+      }
+    ]
+  },
+  "income_quartile": {
+    "attribute": "Income Quartile",
+    "reference_group": "Q4 (Highest)",
+    "n_groups": 4,
+    "violations_found": true,
+    "violation_count": 1,
+    "violating_groups": [
+      "Q1 (Lowest)"
+    ],
+    "overall_summary": {
+      "min_approval_rate": 0.8789,
+      "max_approval_rate": 0.9599,
+      "approval_rate_range": 0.08099999999999996,
+      "min_tpr": 0.375,
+      "max_tpr": 0.5391,
+      "min_auc": 0.8408,
+      "max_auc": 0.8826
+    },
+    "group_metrics": [
+      {
+        "group": "Q1 (Lowest)",
+        "n_samples": 5597,
+        "n_defaults": 460,
+        "default_rate": 0.0822,
+        "approval_rate": 0.8789,
+        "tpr_recall": 0.5391,
+        "tnr_specificity": 0.9163,
+        "fpr": 0.0837,
+        "fnr": 0.4609,
+        "precision": 0.3658,
+        "f1": 0.4359,
+        "auc_roc": 0.846
+      },
+      {
+        "group": "Q2",
+        "n_samples": 7790,
+        "n_defaults": 541,
+        "default_rate": 0.0694,
+        "approval_rate": 0.9211,
+        "tpr_recall": 0.5102,
+        "tnr_specificity": 0.9532,
+        "fpr": 0.0468,
+        "fnr": 0.4898,
+        "precision": 0.4488,
+        "f1": 0.4775,
+        "auc_roc": 0.8826
+      },
+      {
+        "group": "Q3",
+        "n_samples": 3375,
+        "n_defaults": 216,
+        "default_rate": 0.064,
+        "approval_rate": 0.9339,
+        "tpr_recall": 0.463,
+        "tnr_specificity": 0.9611,
+        "fpr": 0.0389,
+        "fnr": 0.537,
+        "precision": 0.4484,
+        "f1": 0.4556,
+        "auc_roc": 0.8408
+      },
+      {
+        "group": "Q4 (Highest)",
+        "n_samples": 5587,
+        "n_defaults": 280,
+        "default_rate": 0.0501,
+        "approval_rate": 0.9599,
+        "tpr_recall": 0.375,
+        "tnr_specificity": 0.9776,
+        "fpr": 0.0224,
+        "fnr": 0.625,
+        "precision": 0.4688,
+        "f1": 0.4167,
+        "auc_roc": 0.8509
+      }
+    ],
+    "fairness_ratios": [
+      {
+        "group": "Q1 (Lowest)",
+        "reference_group": "Q4 (Highest)",
+        "demographic_parity_ratio": 0.9156,
+        "equal_opportunity_ratio": 1.4376,
+        "predictive_parity_ratio": 0.7803,
+        "auc_ratio": 0.9942,
+        "demographic_parity_violation": false,
+        "equal_opportunity_violation": false,
+        "predictive_parity_violation": true
+      },
+      {
+        "group": "Q2",
+        "reference_group": "Q4 (Highest)",
+        "demographic_parity_ratio": 0.9596,
+        "equal_opportunity_ratio": 1.3605,
+        "predictive_parity_ratio": 0.9573,
+        "auc_ratio": 1.0373,
+        "demographic_parity_violation": false,
+        "equal_opportunity_violation": false,
+        "predictive_parity_violation": false
+      },
+      {
+        "group": "Q3",
+        "reference_group": "Q4 (Highest)",
+        "demographic_parity_ratio": 0.9729,
+        "equal_opportunity_ratio": 1.2347,
+        "predictive_parity_ratio": 0.9565,
+        "auc_ratio": 0.9881,
+        "demographic_parity_violation": false,
+        "equal_opportunity_violation": false,
+        "predictive_parity_violation": false
+      },
+      {
+        "group": "Q4 (Highest)",
+        "reference_group": "Q4 (Highest)",
+        "demographic_parity_ratio": 1.0,
+        "equal_opportunity_ratio": 1.0,
+        "predictive_parity_ratio": 1.0,
+        "auc_ratio": 1.0,
+        "demographic_parity_violation": false,
+        "equal_opportunity_violation": false,
+        "predictive_parity_violation": false
+      }
+    ]
+  },
+  "dependents": {
+    "attribute": "Dependents",
+    "reference_group": "0",
+    "n_groups": 3,
+    "violations_found": false,
+    "violation_count": 0,
+    "violating_groups": [],
+    "overall_summary": {
+      "min_approval_rate": 0.8894,
+      "max_approval_rate": 0.9332,
+      "approval_rate_range": 0.04380000000000006,
+      "min_tpr": 0.4814,
+      "max_tpr": 0.5241,
+      "min_auc": 0.8468,
+      "max_auc": 0.869
+    },
+    "group_metrics": [
+      {
+        "group": "0",
+        "n_samples": 13569,
+        "n_defaults": 781,
+        "default_rate": 0.0576,
+        "approval_rate": 0.9332,
+        "tpr_recall": 0.4814,
+        "tnr_specificity": 0.9586,
+        "fpr": 0.0414,
+        "fnr": 0.5186,
+        "precision": 0.415,
+        "f1": 0.4458,
+        "auc_roc": 0.869
+      },
+      {
+        "group": "1-2",
+        "n_samples": 6782,
+        "n_defaults": 529,
+        "default_rate": 0.078,
+        "approval_rate": 0.9096,
+        "tpr_recall": 0.482,
+        "tnr_specificity": 0.9427,
+        "fpr": 0.0573,
+        "fnr": 0.518,
+        "precision": 0.416,
+        "f1": 0.4466,
+        "auc_roc": 0.8468
+      },
+      {
+        "group": "3+",
+        "n_samples": 1998,
+        "n_defaults": 187,
+        "default_rate": 0.0936,
+        "approval_rate": 0.8894,
+        "tpr_recall": 0.5241,
+        "tnr_specificity": 0.9321,
+        "fpr": 0.0679,
+        "fnr": 0.4759,
+        "precision": 0.4434,
+        "f1": 0.4804,
+        "auc_roc": 0.8519
+      }
+    ],
+    "fairness_ratios": [
+      {
+        "group": "0",
+        "reference_group": "0",
+        "demographic_parity_ratio": 1.0,
+        "equal_opportunity_ratio": 1.0,
+        "predictive_parity_ratio": 1.0,
+        "auc_ratio": 1.0,
+        "demographic_parity_violation": false,
+        "equal_opportunity_violation": false,
+        "predictive_parity_violation": false
+      },
+      {
+        "group": "1-2",
+        "reference_group": "0",
+        "demographic_parity_ratio": 0.9747,
+        "equal_opportunity_ratio": 1.0012,
+        "predictive_parity_ratio": 1.0024,
+        "auc_ratio": 0.9745,
+        "demographic_parity_violation": false,
+        "equal_opportunity_violation": false,
+        "predictive_parity_violation": false
+      },
+      {
+        "group": "3+",
+        "reference_group": "0",
+        "demographic_parity_ratio": 0.9531,
+        "equal_opportunity_ratio": 1.0887,
+        "predictive_parity_ratio": 1.0684,
+        "auc_ratio": 0.9803,
+        "demographic_parity_violation": false,
+        "equal_opportunity_violation": false,
+        "predictive_parity_violation": false
+      }
+    ]
+  }
+}

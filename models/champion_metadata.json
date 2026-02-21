@@ -1,0 +1,55 @@
+{
+  "champion_model": "GradientBoosting",
+  "optimal_threshold": 0.5843,
+  "val_auc": 0.8621,
+  "val_ks": 0.5688,
+  "val_prauc": 0.4025,
+  "val_f1": 0.4506,
+  "uses_scaling": false,
+  "all_results": {
+    "LogisticRegression": {
+      "AUC-ROC": 0.8294,
+      "KS-Stat": 0.503,
+      "PR-AUC": 0.3456,
+      "F1": 0.3838,
+      "Brier": 0.1601,
+      "TrainTime_s": 0.3,
+      "InferTime_ms": 0.01,
+      "OptThreshold": 0.7574
+    },
+    "DecisionTree": {
+      "AUC-ROC": 0.85,
+      "KS-Stat": 0.5456,
+      "PR-AUC": 0.3604,
+      "F1": 0.4346,
+      "Brier": 0.1453,
+      "TrainTime_s": 0.8,
+      "InferTime_ms": 0.01,
+      "OptThreshold": 0.8076
+    },
+    "RandomForest": {
+      "AUC-ROC": 0.8599,
+      "KS-Stat": 0.5641,
+      "PR-AUC": 0.4021,
+      "F1": 0.4483,
+      "Brier": 0.1369,
+      "TrainTime_s": 3.7,
+      "InferTime_ms": 0.79,
+      "OptThreshold": 0.7653
+    },
+    "GradientBoosting": {
+      "AUC-ROC": 0.8621,
+      "KS-Stat": 0.5688,
+      "PR-AUC": 0.4025,
+      "F1": 0.4506,
+      "Brier": 0.0716,
+      "TrainTime_s": 80.1,
+      "InferTime_ms": 0.13,
+      "OptThreshold": 0.5843
+    }
+  },
+  "test_auc": 0.864,
+  "test_ks": 0.5806,
+  "test_prauc": 0.3982,
+  "test_f1": 0.4527
+}

@@ -1,0 +1,53 @@
+# OpenFinGuard — Full Requirements
+# Optimized for Python 3.13
+
+# ── Data & ML Core ──────────────────────────────────────────────────────────
+numpy
+pandas
+scikit-learn
+imbalanced-learn
+
+# ── Gradient Boosting Models ────────────────────────────────────────────────
+lightgbm
+xgboost
+catboost
+
+# ── Explainability ──────────────────────────────────────────────────────────
+shap
+
+# ── Fairness ────────────────────────────────────────────────────────────────
+fairlearn
+
+# ── Experiment Tracking ─────────────────────────────────────────────────────
+mlflow
+
+# ── API ─────────────────────────────────────────────────────────────────────
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+httpx
+
+# ── Frontend ────────────────────────────────────────────────────────────────
+streamlit
+plotly
+
+# ── Visualization ───────────────────────────────────────────────────────────
+matplotlib
+seaborn
+
+# ── Utilities ───────────────────────────────────────────────────────────────
+loguru
+joblib
+python-dotenv
+requests
+
+# ── Database ────────────────────────────────────────────────────────────────
+psycopg2-binary
+sqlalchemy
+
+# ── Dev / Testing ───────────────────────────────────────────────────────────
+pytest
+pytest-asyncio
+black
+isort
