@@ -246,7 +246,6 @@ Every prediction is persisted to PostgreSQL with full feature values, SHAP expla
 | Frontend | Streamlit + Plotly |
 | Containerization | Docker + Docker Compose |
 | Experiment Tracking | MLflow |
-| CI/CD | GitHub Actions |
 | Language | Python 3.11 |
 
 ---
